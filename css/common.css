@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+body {
+  font-size: 16px;
+  font-family: "Zen Old Mincho", serif;
+}
+
+header {
+  background-color: #007e43;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+}
+
+header li {
+  display: flex;
+  align-items: center;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+header li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+footer {
+  background-color: #007e43;
+  color: #ffffff;
+}
+
+.flex {
+  display: flex;
+}
