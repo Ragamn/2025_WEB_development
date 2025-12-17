@@ -83,6 +83,7 @@ footer {
   height: 24px;
   background-color: #ffffff;
   border-radius: 50%;
+  margin-left: 1rem;
 }
 
 .icon::before {
