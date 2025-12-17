@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/destyle.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,7 +16,6 @@
       href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&family=M+PLUS+Rounded+1c&family=Moirai+One&family=Noto+Sans+JP:wght@100..900&family=Potta+One&family=Raleway:ital,wght@0,100..900;1,100..900&family=Zen+Old+Mincho&display=swap"
       rel="stylesheet"
     />
-    <!-- <link rel="stylesheet" href="./css/destyle.css" /> -->
     <link rel="stylesheet" href="./css/common.css" />
     <title>Document</title>
   </head>
@@ -56,20 +56,30 @@
       <div class="flex">
         <div class="contact">
           <h1>お問い合わせ</h1>
-          <p>TEL 090-0000-0000</p>
-          <p>FAX 090-0000-0000</p>
-          <p>営業日:平日8:00 ~ 17:00</p>
-          <p>第2・第4土曜日、日曜日、お盆、GW、年末年始は営業していません。</p>
-          <a href="#">お問い合わせへ</a>
-          <a href="#">事業紹介</a>
-          <a href="#">会社概要</a>
-          <a href="#">採用情報</a>
+          <div class="contact-info">
+            <p>TEL 090-0000-0000</p>
+            <p>FAX 090-0000-0000</p>
+          </div>
+          <div class="business">
+            <p class="day">営業日:平日8:00 ~ 17:00</p>
+            <p>
+              第2・第4土曜日、日曜日、お盆、GW、年末年始は営業していません。
+            </p>
+          </div>
+          <div class="to-contact">
+            <a href="#">お問い合わせへ<span class="icon"></span></a>
+          </div>
+          <div class="footer-nav">
+            <a href="#">事業紹介<span class="icon-small"></span></a>
+            <a href="#">会社概要<span class="icon-small"></span></a>
+            <a href="#">採用情報<span class="icon-small"></span></a>
+          </div>
         </div>
         <div class="address">
           <h1>所在地</h1>
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3069.5001285679064!2d141.13918177597594!3d39.70594177156271!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f857637537b97ef%3A0xd2c10c797f35bb2!2z44CSMDIwLTAwMjEg5bKp5omL55yM55ub5bKh5biC5Lit5aSu6YCa77yT5LiB55uu77yR77yS4oiS77yS!5e0!3m2!1sja!2sjp!4v1765762661394!5m2!1sja!2sjp"
-            width="600"
+            width="500"
             height="300"
             style="border: 0"
             allowfullscreen=""
@@ -78,8 +88,10 @@
           ></iframe>
         </div>
       </div>
-      <p>早池峰設備工業</p>
-      <p>〒000-0000 岩手県盛岡市中央通３丁目１２−２</p>
+      <div class="footer-info">
+        <p>早池峰設備工業</p>
+        <p>〒000-0000 岩手県盛岡市中央通３丁目１２−２</p>
+      </div>
     </footer>
   </body>
 </html>
