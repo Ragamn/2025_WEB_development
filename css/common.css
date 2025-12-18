@@ -2,7 +2,7 @@
 
 body {
   font-size: 16px;
-  font-family: "Zen Old Mincho", serif;
+  font-family: "Noto Sans JP", serif;
 }
 
 header {
@@ -18,12 +18,12 @@ header h1 {
   display: flex;
   align-items: center;
   padding: 0 1rem;
+  font-family: "Zen Old Mincho", serif;
 }
 
 header li {
   display: flex;
   align-items: center;
-  font-family: "Noto Sans JP", sans-serif;
 }
 
 header li a {
@@ -39,6 +39,10 @@ footer {
   width: 100%;
 }
 
+footer h1 {
+  font-family: "Zen Old Mincho", serif;
+}
+
 .flex {
   display: flex;
   justify-content: center;
@@ -46,7 +50,6 @@ footer {
 
 .flex p {
   font-size: 1rem;
-  font-family: "Noto Sans JP", sans-serif;
 }
 
 .flex h1 {
@@ -133,12 +136,10 @@ footer {
 
 .contact-info p {
   font-size: 2rem;
-  font-family: "Noto Sans JP", sans-serif;
 }
 
 .contact .day {
   font-size: 1.5rem;
-  font-family: "Noto Sans JP", sans-serif;
 }
 
 .business {
@@ -153,4 +154,32 @@ footer {
 
 .footer-info p {
   margin: 2rem;
+}
+
+/* 一番太い文字(ぺージの一番上の見出し) */
+h1 {
+  font-family: "Zen Old Mincho", serif;
+  font-size: 48px;
+  font-weight: bold;
+}
+
+/* 各コンテンツの見出し */
+h2 {
+  font-family: "Zen Old Mincho", serif;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+/* フォームや採用情報などの小見出し */
+h3 {
+  font-family: "Zen Old Mincho", serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* ボタンテキスト */
+.btn-text {
+  font-family: "Noto Sans JP", serif;
+  font-size: 24px;
+  font-weight: bold;
 }
