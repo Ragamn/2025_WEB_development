@@ -1,0 +1,70 @@
+.mv {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.mv img {
+  width: 100%;
+  height: auto;
+}
+
+.mv .catchcopy {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-10%, -50%);
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.mv .subtitle {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(160%, -20%);
+  font-size: 1.2rem;
+}
+
+.mv .phone-number {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffffff;
+  position: relative;
+  display: inline-block;
+  z-index: 0;
+}
+
+.mv .phone-number::after {
+  content: "";
+  position: absolute;
+  bottom: 3%;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  background-color: #3d679e;
+  z-index: -1;
+}
+
+.mv .phone-position {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(100%, 30%);
+}
+
+.mv a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(70%, 200%);
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #008000;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+}
