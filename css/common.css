@@ -1,0 +1,185 @@
+@charset "UTF-8";
+
+body {
+  font-size: 16px;
+  font-family: "Noto Sans JP", serif;
+}
+
+header {
+  background-color: #007e43;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+}
+
+header h1 {
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+  font-family: "Zen Old Mincho", serif;
+}
+
+header li {
+  display: flex;
+  align-items: center;
+}
+
+header li a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0 1rem;
+}
+
+footer {
+  background-color: #007e43;
+  color: #ffffff;
+  height: 500px;
+  width: 100%;
+}
+
+footer h1 {
+  font-family: "Zen Old Mincho", serif;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+}
+
+.flex p {
+  font-size: 1rem;
+}
+
+.flex h1 {
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+.contact .to-contact {
+  width: 300px;
+  height: 90px;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.contact .to-contact a {
+  color: #ffffff;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  height: 100%;
+  font-size: 1.5rem;
+}
+
+.icon {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  margin-left: 1rem;
+}
+
+.icon::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 8px solid #007e43;
+}
+
+.footer-nav a {
+  display: inline-flex;
+  align-items: center;
+  color: #ffffff;
+  padding-right: 3rem;
+}
+
+.icon-small {
+  position: relative;
+  width: 16px;
+  height: 16px;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+
+.icon-small::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 0;
+  border-top: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+  border-left: 4px solid #007e43;
+}
+
+.contact-info {
+  margin-bottom: 1rem;
+}
+
+.contact-info p {
+  font-size: 2rem;
+}
+
+.contact .day {
+  font-size: 1.5rem;
+}
+
+.business {
+  margin-bottom: 2rem;
+}
+
+.footer-info {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.footer-info p {
+  margin: 2rem;
+}
+
+/* 一番太い文字(ぺージの一番上の見出し) */
+h1 {
+  font-family: "Zen Old Mincho", serif;
+  font-size: 48px;
+  font-weight: bold;
+}
+
+/* 各コンテンツの見出し */
+h2 {
+  font-family: "Zen Old Mincho", serif;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+/* フォームや採用情報などの小見出し */
+h3 {
+  font-family: "Zen Old Mincho", serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* ボタンテキスト */
+.btn-text {
+  font-family: "Noto Sans JP", serif;
+  font-size: 24px;
+  font-weight: bold;
+}
