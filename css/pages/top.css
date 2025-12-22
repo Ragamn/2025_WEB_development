@@ -1,7 +1,7 @@
 .mv {
   position: relative;
   text-align: center;
-  color: white;
+  color: #ffffff;
 }
 
 .mv img {
@@ -118,4 +118,49 @@
 
 .service {
   background-color: #007e43;
+  color: #ffffff;
+  padding: 50px 100px;
+  height: 450px;
+}
+
+.service .content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.service .content .introduction {
+  flex: 1;
+}
+
+.service .content .introduction p {
+  font-size: 1.25rem;
+  margin-bottom: 4rem;
+}
+
+.service .content .introduction .link-service {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 320px;
+  height: 60px;
+  background-color: #ffffff;
+  color: #007e43;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.service .image {
+  display: flex;
+  justify-content: center;
+}
+
+.service .image img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  margin: 0 20px;
 }
