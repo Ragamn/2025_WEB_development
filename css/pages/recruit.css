@@ -44,3 +44,11 @@
   margin-top: 1.0rem;
   margin-bottom: 1.0rem;
 }
+
+.recruit-table th,
+.recruit-table td {
+  padding: 1.5rem 1.0rem;
+  border-bottom: 1px solid #008552;
+  text-align: left;
+  vertical-align: top;
+}
