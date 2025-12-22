@@ -12,19 +12,33 @@
 .mv .catchcopy {
   position: absolute;
   top: 20%;
-  left: 50%;
-  transform: translate(-10%, -50%);
-  font-size: 2.5rem;
-  font-weight: bold;
+  left: 40%;
   margin: 0;
 }
 
+.mv .catchcopy h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px #0e117d;
+}
+
+.mv .catchcopy .catchcopy-1 {
+  transform: translate(-20%, -40%);
+}
+
+.mv .catchcopy .catchcopy-2 {
+  transform: translate(15%, -30%);
+}
+
 .mv .subtitle {
+  font-family: "Zen Old Mincho", serif;
   position: absolute;
   top: 40%;
   left: 50%;
-  transform: translate(160%, -20%);
-  font-size: 1.2rem;
+  transform: translate(69%, 100%);
+  font-size: 2rem;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #0e117d;
 }
 
 .mv .phone-number {
@@ -51,7 +65,7 @@
   position: absolute;
   top: 55%;
   left: 50%;
-  transform: translate(10%, -10%);
+  transform: translate(10%, 10%);
 }
 
 .mv .link-to-contact {
@@ -70,4 +84,8 @@
   font-size: 1.5rem;
   width: 380px;
   height: 70px;
+}
+
+.service {
+  background-color: #007e43;
 }
