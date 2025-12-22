@@ -86,6 +86,36 @@
   height: 70px;
 }
 
+.about-us {
+  margin: 4rem;
+}
+
+.about-us p {
+  font-family: "Zen Old Mincho", serif;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 4rem;
+}
+
+.about-us .block {
+  display: block;
+}
+
+.about-us .link-about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 350px;
+  height: 70px;
+  background-color: #008000;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
 .service {
   background-color: #007e43;
 }
