@@ -163,4 +163,17 @@
   height: 300px;
   object-fit: cover;
   margin: 0 20px;
+  filter: brightness(50%);
+}
+
+.service .image .service-image {
+  position: relative;
+}
+
+.service .image .service-image a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-decoration: underline;
 }
