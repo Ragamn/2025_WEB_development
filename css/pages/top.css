@@ -230,9 +230,7 @@
   color: #007e43;
 }
 
-/* 画像は背景色で代用 */
 .areas .area {
-  background-color: #c0c0c0;
   width: 300px;
   height: 450px;
 }
@@ -273,4 +271,58 @@
   font-size: 1.5rem;
   width: 380px;
   height: 70px;
+}
+
+.corporate {
+  margin: 100px 100px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.corporate h2 {
+  color: #007e43;
+  margin-bottom: 10px;
+}
+
+.corporate .content {
+  width: 600px;
+  height: 300px;
+}
+
+.corporate .content .flex {
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid #007e43;
+}
+
+.corporate .content .flex .info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+}
+
+.corporate .content .flex p {
+  width: 200px;
+  height: 120px;
+}
+
+.corporate .content .flex img {
+  width: 250px;
+  height: 300px;
+}
+
+.corporate .content .flex .link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 20px;
+  background-color: #008000;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  width: 185px;
+  height: 80px;
 }
