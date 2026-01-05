@@ -224,3 +224,53 @@
   align-items: center;
   justify-content: center;
 }
+
+.areas h2 {
+  margin: 50px 100px;
+  color: #007e43;
+}
+
+/* 画像は背景色で代用 */
+.areas .area {
+  background-color: #c0c0c0;
+  width: 300px;
+  height: 450px;
+}
+
+.areas .content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  margin-bottom: 50px;
+}
+
+.areas .content .info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.areas .content .info p {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.areas .content .info span {
+  display: block;
+}
+
+.areas .content .info .link-to-contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 20px;
+  background-color: #008000;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  width: 380px;
+  height: 70px;
+}
