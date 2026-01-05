@@ -177,3 +177,50 @@
   transform: translate(-50%, -50%);
   text-decoration: underline;
 }
+
+.flow h2 {
+  margin: 50px 100px;
+  color: #007e43;
+}
+
+.flow .prosess {
+  background-color: #e6f1ec;
+  padding: 50px 100px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.flow .prosess .step {
+  background-color: #ffffff;
+  border: 1px solid #000;
+  border-radius: 30px;
+  width: 230px;
+  height: 280px;
+  padding: 10px;
+  text-align: center;
+}
+
+.flow .prosess .step img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.flow .prosess .step .title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.flow .prosess .step .number {
+  font-size: 1.5rem;
+  background-color: #007e43;
+  color: #ffffff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
