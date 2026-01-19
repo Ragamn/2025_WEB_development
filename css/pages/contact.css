@@ -2,17 +2,23 @@
 
 /* ページヘッダー */
 .page-header {
-  background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100'%3E%3Cpath d='M0 0 L50 50 L0 100 Z M50 0 L100 50 L50 100 Z' fill='%23e0e0e0' opacity='0.3'/%3E%3C/svg%3E");
+  background: url("../../images/contact.png");
+  background-size: cover;
+  background-position: center;
   padding: 60px 20px;
   height: 106px;
-  text-align: center;
+  text-align: left;
   margin-bottom: 40px;
+}
+
+.page-header-content {
+  max-width: 948px;
+  margin: 0 auto;
 }
 
 .page-header h1 {
   font-size: 2.5rem;
-  color: #333;
+  color: #413126;
 }
 
 /* フォームコンテナ */
@@ -27,7 +33,7 @@
 /* フォームグループ */
 .form-group {
   display: flex;
-  gap: 20px;
+  gap: 30px;
   margin-bottom: 30px;
   align-items: flex-start;
 }
@@ -39,13 +45,14 @@
 
 .form-input-wrapper {
   flex: 1;
+  color: #413126;
 }
 
 .form-group label {
   display: block;
   font-size: 1rem;
   font-weight: bold;
-  color: #333;
+  color: #413126;
 }
 
 .required {
@@ -98,6 +105,14 @@
   border-color: #005a2f;
 }
 
+/* 特定フィールドの幅調整 */
+#category,
+#tel,
+#zip {
+  width: 40%;
+  max-width: 300px;
+}
+
 /* 注釈 */
 .note {
   font-size: 0.875rem;
@@ -135,7 +150,8 @@
 
 .step-bar {
   display: flex;
-  justify-content: space-between;;
+  justify-content: space-between;
+  gap: 1px;
   background-color: #eef3ee;
 }
 
@@ -147,10 +163,11 @@
 .step-item {
   flex: 1;
   text-align: center;
-  padding: 10px;
+  padding: 15px;
   font-size: 14px;
-  background-color: #e6e6e6;
-  color: #666;
+  font-weight: bold;
+  background-color: #E5EEE7;
+  color: #413126;
   position: relative;
 }
 
@@ -183,10 +200,6 @@
   .form-container {
     padding: 30px 100px;
     margin: 0 20px 40px;
-  }
-
-  .form-group {
-    /* flex-direction: column; */
   }
 
   .form-label-wrapper {
