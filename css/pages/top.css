@@ -198,6 +198,7 @@
   height: 280px;
   padding: 10px;
   text-align: center;
+  position: relative;
 }
 
 .flow .prosess .step img {
@@ -214,6 +215,7 @@
 }
 
 .flow .prosess .step .number {
+  position: absolute;
   font-size: 1.5rem;
   background-color: #007e43;
   color: #ffffff;
@@ -223,6 +225,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  top: 1%;
+  left: 3%;
 }
 
 .areas h2 {
