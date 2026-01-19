@@ -21,14 +21,14 @@
 
 .page-title {
   text-align: center;
-  margin-top: 2rem;
+  margin-top: 40px;
 }
 
 .recruit-table-container {
   width: 80%;
   border: 0.2rem solid #008643;
   background-color: #fff;
-  margin: 4.0rem auto;
+  margin: 40px auto;
 }
 
 .table-header {
@@ -41,8 +41,7 @@
   width: 100%;
   border-collapse: separate; 
   border-spacing: 2.0rem 0;
-  margin-top: 1.0rem;
-  margin-bottom: 1.0rem;
+  margin: 40px auto;
 }
 
 .recruit-table th,
@@ -65,7 +64,7 @@
   display: flex;
   justify-content: spaace-between;
   gap: 2.0rem;
-  margin: auto;
+  margin: 40px auto;
 }
 
 .stat-box {
@@ -79,7 +78,7 @@
 }
 
 .stat-icon {
-    font-size: 4rem; 
+    font-size: 4.1rem; 
     color: #008643;
 }
 
@@ -89,18 +88,67 @@
 
 .stat-label {
     display: block;
-    font-size: 2.3rem;
+    font-size: 2rem;
     font-weight: bold;
     margin-bottom: 0.5rem;
 }
 
 .stat-number {
-    font-size: 5.5rem;
+    font-size: 3.8rem;
     font-weight: bold;
     color: #008643;
 }
 
 .stat-unit {
-    font-size: 2.5rem; /* 14px → 1.4rem */
+    font-size: 2rem; 
     font-weight: bold;
+}
+
+.action-area{
+
+  text-align: center;
+  margin: 40px;
+}
+
+.hw-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+.tour-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 40px auto;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1.5rem 1.0rem; 
+    border-radius: 0.5rem;
+    font-size: 1.5rem; 
+    font-weight: bold;
+    transition: all 0.3s;
+    text-align: center;
+    min-width: 30rem;
+}
+
+.btn-outline {
+    border: 0.2rem solid #008643;
+    color: #008643;
+    background-color: #fff;
+}
+.btn-outline:hover {
+    background-color: #f0fdf4;
+}
+
+.btn-solid {
+    background-color: #008643;
+    color: #fff;
+    border: 0.2rem solid #008643;
+    margin-bottom: 40px;
+}
+.btn-solid:hover {
+    background-color: #00632f;
+    border-color: #004d1f;
 }
