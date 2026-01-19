@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../css/destyle.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&family=M+PLUS+Rounded+1c&family=Moirai+One&family=Potta+One&family=Raleway:ital,wght@0,100..900;1,100..900&family=Zen+Old+Mincho&display=swap"
+    rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&family=M+PLUS+Rounded+1c&family=Moirai+One&family=Noto+Sans+JP:wght@100..900&family=Potta+One&family=Raleway:ital,wght@0,100..900;1,100..900&family=Zen+Old+Mincho&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="../css/common.css" />
+  <link rel="stylesheet" href="../css/pages/contact.css" />
+  <title>お問い合わせ - 早池峰設備工業</title>
+</head>
+
+<body>
+  <header>
+    <h1>早池峰設備工業</h1>
+    <li>
+      <ul>
+        <a href="../service/index.html">事業紹介</a>
+      </ul>
+      <ul>
+        <a href="../about/index.html">会社概要</a>
+      </ul>
+      <ul>
+        <a href="../recruit/index.html">採用情報</a>
+      </ul>
+      <ul>
+        <a href="../contact/index.html">お問い合わせ</a>
+      </ul>
+    </li>
+  </header>
+
+  <main>
+    <div class="page-header">
+      <h1>お問い合わせ・資料請求</h1>
+    </div>
+
+    <div class="step-bar-container">
+      <ul class="step-bar">
+        <li class="step-item active" id="step1-indicator">1. 内容の入力</li>
+        <li class="step-item" id="step2-indicator">2. 入力内容の確認</li>
+        <li class="step-item" id="step3-indicator">3. 送信完了</li>
+      </ul>
+    </div>
+
+    <div class="contact-content">
+      <div class="form-container">
+        <form id="contactForm">
+          <div class="form-group">
+            <div class="form-label-wrapper">
+              <label for="category">お問い合わせ種別</label>
+            </div>
+            <div class="form-input-wrapper">
+              <select id="category" name="category" required>
+                <option value="">ご依頼</option>
+                <option value="見積もり">見積もり依頼</option>
+                <option value="資料請求">資料請求</option>
+                <option value="その他">その他</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="form-label-wrapper">
+              <label for="company">会社名 <span class="required">必須</span></label>
+            </div>
+            <div class="form-input-wrapper">
+              <input type="text" id="company" name="company" placeholder="こちらにご入力ください" required />
+              <p class="note">※個人の方は"個人"とご入力ください。</p>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="form-label-wrapper">
+              <label for="name">名前 <span class="required">必須</span></label>
+            </div>
+            <div class="form-input-wrapper">
+              <input type="text" id="name" name="name" required />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="form-label-wrapper">
+              <label for="furigana">フリガナ <span class="required">必須</span></label>
+            </div>
+            <div class="form-input-wrapper">
+              <input type="text" id="furigana" name="furigana" required />
+              <p class="note">※全角カタカナでご入力ください。</p>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="form-label-wrapper">
+              <label for="tel">電話番号 <span class="required">必須</span></label>
+            </div>
+            <div class="form-input-wrapper">
+              <input type="tel" id="tel" name="tel" placeholder="0123456789" required />
+              <p class="note">※ハイフン（-）を省いて入力してください。※半角数字でご入力ください。</p>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="form-label-wrapper">
+              <label for="zip">郵便番号 <span class="required">必須</span></label>
+            </div>
+            <div class="form-input-wrapper">
+              <input type="text" id="zip" name="zip" placeholder="0200321" required />
+              <p class="note">※ハイフン（-）を省いて入力してください。※半角数字でご入力ください。</p>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="form-label-wrapper">
+              <label for="address">住所 <span class="required">必須</span></label>
+            </div>
+            <div class="form-input-wrapper">
+              <input type="text" id="address" name="address" placeholder="岩手県盛岡市中央通３丁目１２－２" required />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="form-label-wrapper">
+              <label for="email">メールアドレス <span class="required">必須</span></label>
+            </div>
+            <div class="form-input-wrapper">
+              <input type="email" id="email" name="email" required />
+              <p class="note">※半角英数字のみでご入力ください。</p>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="form-label-wrapper">
+              <label for="message">お問い合わせ内容 <span class="required">必須</span></label>
+            </div>
+            <div class="form-input-wrapper">
+              <textarea id="message" name="message" rows="8" placeholder="お問い合わせの内容をご入力ください" required></textarea>
+            </div>
+          </div>
+
+          <div class="submit-button-container">
+            <button type="submit" class="submit-button">
+              入力内容を確認する
+            </button>
+          </div>
+        </form>
+      </div>
+  </main>
+
+  <footer>
+    <div class="flex">
+      <div class="contact">
+        <h1>お問い合わせ</h1>
+        <div class="contact-info">
+          <p>TEL 090-0000-0000</p>
+          <p>FAX 090-0000-0000</p>
+        </div>
+        <div class="business">
+          <p class="day">営業日:平日8:00 ~ 17:00</p>
+          <p>
+            第2・第4土曜日、日曜日、お盆、GW、年末年始は営業していません。
+          </p>
+        </div>
+        <div class="to-contact">
+          <a href="../contact/index.html">お問い合わせへ<span class="icon"></span></a>
+        </div>
+        <div class="footer-nav">
+          <a href="../service/index.html">事業紹介<span class="icon-small"></span></a>
+          <a href="../about/index.html">会社概要<span class="icon-small"></span></a>
+          <a href="../recruit/index.html">採用情報<span class="icon-small"></span></a>
+        </div>
+      </div>
+      <div class="address">
+        <h1>所在地</h1>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3069.5001285679064!2d141.13918177597594!3d39.70594177156271!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f857637537b97ef%3A0xd2c10c797f35bb2!2z44CSMDIwLTAwMjEg5bKp5omL55yM55ub5bKh5biC5Lit5aSu6YCa77yT5LiB55uu77yR77yS4oiS77yS!5e0!3m2!1sja!2sjp!4v1765762661394!5m2!1sja!2sjp"
+          width="500" height="300" style="border: 0" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+    <div class="footer-info">
+      <p>早池峰設備工業</p>
+      <p>〒000-0000 岩手県盛岡市中央通３丁目１２−２</p>
+    </div>
+  </footer>
+
+  <script src="../js/pages/contact.js"></script>
+</body>
+
+</html>
