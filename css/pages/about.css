@@ -1,0 +1,70 @@
+.title {
+  text-align: center;
+  color: #007e43;
+  margin: 30px 0;
+}
+
+.company-info img {
+  position: relative;
+  width: 100%;
+}
+
+.company-info .description {
+  position: absolute;
+  width: 700px;
+  font-size: 2rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.company-info .description h2 {
+  text-align: center;
+}
+
+.company-info .description p {
+  text-align: center;
+}
+
+.about .company-about {
+  margin: 50px 100px;
+  color: #007e43;
+}
+
+.about .company-details {
+  margin: 0 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+.about .company-details .detail {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.about .company-details .detail .label {
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+.about .company-details .detail .value {
+  flex: 1;
+}
+
+.about .company-details .to-service {
+  width: 200px;
+  height: 60px;
+  background-color: #007e43;
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 60px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  margin-top: 20px;
+  display: inline-block;
+}
