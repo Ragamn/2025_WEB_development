@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+html {
+  scroll-behavior: smooth;
+}
+
 .heading {
   width: 100%;
   height: 15rem;
@@ -23,4 +27,31 @@
 .heading p {
   text-align: center;
   margin-top: 1.5rem;
+}
+
+/* ナビゲーションの見た目（参考） */
+.anchor-nav {
+  display: flex;
+  justify-content: center;
+  border: 1.2px solid #1a7b45; /* 画像の緑色に合わせる */
+  margin: 20px auto;
+  width: 80%;
+}
+
+.nav-item {
+  flex: 1;
+  font-size: 1.5rem;
+  margin: 10px auto;
+  text-align: center;
+  text-decoration: none;
+  color: #1a7b45;
+  border-right: 1.2px solid #1a7b45;
+}
+
+.nav-item:last-child {
+  border-right: none;
+}
+
+.nav-item:hover {
+  background-color: #f0fdf4;
 }
