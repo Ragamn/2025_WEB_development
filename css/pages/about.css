@@ -26,7 +26,8 @@
   text-align: center;
 }
 
-.about .company-about {
+.company-about,
+.access .head {
   margin: 50px 100px;
   color: #007e43;
 }
@@ -38,8 +39,8 @@
 }
 
 .about .company-details .detail {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 150px 1fr auto;
   margin: 10px 0;
   padding-bottom: 10px;
   border-bottom: 1px solid #ccc;
@@ -67,4 +68,17 @@
   font-size: 1.2rem;
   margin-top: 20px;
   display: inline-block;
+}
+
+.description {
+  margin: 50px 100px;
+  line-height: 1.8;
+}
+
+.description p {
+  margin-bottom: 10px;
+}
+
+.block {
+  display: block;
 }
