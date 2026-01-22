@@ -29,13 +29,17 @@ html {
   margin-top: 1.5rem;
 }
 
+.main-cont{
+  width: 80%;
+  margin: 0 auto;
+}
+
 /* ナビゲーションの見た目（参考） */
 .anchor-nav {
   display: flex;
   justify-content: center;
   border: 1.2px solid #1a7b45; /* 画像の緑色に合わせる */
   margin: 20px auto;
-  width: 80%;
 }
 
 .nav-item {
@@ -54,4 +58,135 @@ html {
 
 .nav-item:hover {
   background-color: #f0fdf4;
+}
+
+.works-container{
+  margin-bottom: 50px;
+}
+
+/* 基本のボタン形式 */
+.tab-btn {
+  padding: 10px 40px;
+  border-radius: 25px; /* 丸み */
+  border: 1px solid #ccc;
+  background-color: #f0f0f0;
+  color: #333;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s; 
+}
+
+/* 選択されている時の色（画像のような濃い緑） */
+.tab-btn.active {
+  background-color: #008148; 
+  color: white;
+  border-color: #008148;
+}
+
+/* コンテンツの表示・非表示 */
+.tab-panel {
+  display: none; /* 通常は隠す */
+  animation: fadeIn 0.5s;
+}
+
+.tab-panel.active {
+  display: block; /* activeクラスがついた時だけ表示 */
+}
+
+.flow h2 {
+  margin: 50px 0;
+  color: #007e43;
+}
+
+.flow .prosess {
+  background-color: #e6f1ec;
+  padding: 50px 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.flow .prosess .step {
+  background-color: #ffffff;
+  border: 1px solid #000;
+  border-radius: 30px;
+  width: 230px;
+  height: 280px;
+  padding: 10px;
+  text-align: center;
+}
+
+.flow .prosess .step img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.flow .prosess .step .title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.flow .prosess .step .number {
+  position: absolute;
+  font-size: 1.5rem;
+  background-color: #007e43;
+  color: #ffffff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 1%;
+  left: 3%;
+}
+
+.areas h2 {
+  margin: 50px 0px;
+  color: #007e43;
+}
+
+.areas .area {
+  width: 300px;
+  height: 450px;
+}
+
+.areas .content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  margin-bottom: 50px;
+}
+
+.areas .content .info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.areas .content .info p {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.areas .content .info span {
+  display: block;
+}
+
+.areas .content .info .link-to-contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 20px;
+  background-color: #008000;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  width: 380px;
+  height: 70px;
 }
