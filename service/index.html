@@ -6,7 +6,6 @@
   <title>事業紹介</title>
   <link rel="stylesheet" href="../css/destyle.css">
   <link rel="stylesheet" href="../css/common.css">
-  <link rel="stylesheet" href="../css/pages/top.css">
   <link rel="stylesheet" href="../css/pages/service.css">
 </head>
 <body>
@@ -40,7 +39,8 @@
       </div>
     </div>
 
-    <nav class="anchor-nav">
+    <div class="main-cont">
+      <nav class="anchor-nav">
       <a href="#business-works" class="nav-item">
         事業紹介・施工事例<br>
         <svg width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -61,10 +61,19 @@
       </a>
     </nav>
 
-    <div class="tab-nav">
-      <div class="tab-item active">事業紹介・施工事例</div>
-      <div class="tab-item">施工までの流れ</div>
-      <div class="tab-item">対応地域</div>
+    <div class="works-container">
+      <div class="tab-group">
+        <button class="tab-btn active" onclick="switchTab('business')">事業紹介</button>
+        <button class="tab-btn" onclick="switchTab('cases')">施工事例</button>
+      </div>
+
+      <div id="business" class="tab-panel active">
+        
+      </div>
+
+      <div id="cases" class="tab-panel">
+        <p>施工事例のコンテンツがここに入ります</p>
+      </div>
     </div>
 
     <section id="flow" class="flow">
@@ -127,6 +136,8 @@
         </div>
       </div>
     </section>
+
+    </div>
   </main>
 
   <footer>
@@ -170,5 +181,21 @@
       <p>〒000-0000 岩手県盛岡市中央通３丁目１２−２</p>
     </div>
   </footer>
+
+  <script>
+    function switchTab(tabId) {
+      // すべてのパネルを非表示にする
+      const panels = document.querySelectorAll('.tab-panel');
+      panels.forEach(panel => panel.classList.remove('active'));
+
+      // すべてのボタンからactiveクラスを外す
+      const buttons = document.querySelectorAll('.tab-btn');
+      buttons.forEach(btn => btn.classList.remove('active'));
+
+      // クリックされたタブとボタンだけを表示状態にする
+      document.getElementById(tabId).classList.add('active');
+      event.currentTarget.classList.add('active');
+    }
+  </script>
 </body>
 </html>
