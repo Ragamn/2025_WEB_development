@@ -1,0 +1,218 @@
+@charset "UTF-8";
+
+/* ページヘッダー */
+.page-header {
+  background: url("../../images/contact.png");
+  background-size: cover;
+  background-position: center;
+  padding: 60px 20px;
+  height: 106px;
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+.page-header-content {
+  max-width: 948px;
+  margin: 0 auto;
+}
+
+.page-header h1 {
+  font-size: 2.5rem;
+  color: #413126;
+}
+
+/* フォームコンテナ */
+.form-container {
+  max-width: 948px;
+  margin: 0 auto 40px;
+  padding: 30px 100px;
+  background-color: #fff;
+  border: 2px solid #007e43;
+}
+
+/* フォームグループ */
+.form-group {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 30px;
+  align-items: flex-start;
+}
+
+.form-label-wrapper {
+  flex: 0 0 180px;
+  padding-top: 12px;
+}
+
+.form-input-wrapper {
+  flex: 1;
+  color: #413126;
+}
+
+.form-group label {
+  display: block;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #413126;
+}
+
+.required {
+  background-color: #d32f2f;
+  color: #fff;
+  padding: 2px 8px;
+  border-radius: 3px;
+  font-size: 0.75rem;
+  margin-left: 8px;
+}
+
+/* フォーム入力要素 */
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #007e43;
+  font-size: 1rem;
+  font-family: "Noto Sans JP", serif;
+  box-sizing: border-box;
+}
+
+.form-group select {
+  background-color: #fff;
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M0 0 L6 8 L12 0 Z' fill='%23007e43'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  padding-right: 40px;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #999;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #005a2f;
+}
+
+/* 特定フィールドの幅調整 */
+#category,
+#tel,
+#zip {
+  width: 40%;
+  max-width: 300px;
+}
+
+/* 注釈 */
+.note {
+  font-size: 0.875rem;
+  color: #666;
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+/* 送信ボタン */
+.submit-button-container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.submit-button {
+  background-color: #007e43;
+  color: #fff;
+  border: none;
+  padding: 18px 60px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: "Noto Sans JP", serif;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #005a2f;
+}
+
+.submit-button:active {
+  transform: translateY(2px);
+}
+
+.step-bar {
+  display: flex;
+  justify-content: space-between;
+  gap: 1px;
+  background-color: #eef3ee;
+}
+
+.step-bar-container {
+  margin: 0 auto 40px;
+  max-width: 948px;
+}
+
+.step-item {
+  flex: 1;
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: #E5EEE7;
+  color: #413126;
+  position: relative;
+}
+
+.step-item.active {
+  background-color: #007f41;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 768px) {
+  .page-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .step-indicator {
+    gap: 30px;
+  }
+
+  .step-number {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+  }
+
+  .step-text {
+    font-size: 0.85rem;
+  }
+
+  .form-container {
+    padding: 30px 100px;
+    margin: 0 20px 40px;
+  }
+
+  .form-label-wrapper {
+    flex: none;
+    padding-top: 0;
+  }
+
+  .submit-button {
+    padding: 15px 40px;
+    font-size: 1rem;
+  }
+
+  .step-bar-container {
+    margin: 0 20px 30px;
+  }
+}
