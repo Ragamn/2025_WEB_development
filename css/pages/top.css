@@ -185,20 +185,30 @@
 
 .flow .prosess {
   background-color: #e6f1ec;
-  padding: 50px 100px;
+  padding: 50px 20px;
   display: flex;
   justify-content: space-around;
+  margin: 0 100px;
 }
 
 .flow .prosess .step {
   background-color: #ffffff;
   border: 1px solid #000;
   border-radius: 30px;
-  width: 230px;
+  width: 200px;
   height: 280px;
   padding: 10px;
   text-align: center;
   position: relative;
+}
+
+.flow .prosess .triangle {
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid #4bb300;
+  align-self: center;
 }
 
 .flow .prosess .step img {
@@ -254,6 +264,8 @@
 }
 
 .areas .content .info p {
+  font-family: "Zen Old Mincho", serif;
+  font-weight: bold;
   font-size: 2.5rem;
   text-align: center;
   margin-bottom: 50px;
