@@ -1,12 +1,20 @@
 @charset "UTF-8";
 
+/* メインエリア */
+main {
+  background-image: url("../../images/background.png");
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 40px;
+}
+
 /* ページヘッダー */
 .page-header {
   background: url("../../images/contact.png");
   background-size: cover;
   background-position: center;
-  padding: 60px 20px;
-  height: 106px;
+  padding: 50px 5vw;
+  height: 100px;
   text-align: left;
   margin-bottom: 40px;
 }
@@ -19,23 +27,47 @@
 .page-header h1 {
   font-size: 2.5rem;
   color: #413126;
+  /* max-width: 888px; */
 }
 
 /* フォームコンテナ */
 .form-container {
   max-width: 948px;
-  margin: 0 auto 40px;
-  padding: 30px 100px;
-  background-color: #fff;
+  margin: 0 auto;
+  /* padding: 0 2vw; */
+}
+
+/* 入力・確認画面のみ枠線と背景色を適用 */
+form#contactForm,
+.confirmation-content {
   border: 2px solid #007e43;
+  padding: 30px 8%;
+  background-color: #fff;
+}
+
+.completion-content {
+  opacity: 100% ;
 }
 
 /* フォームグループ */
 .form-group {
-  display: flex;
+  display: flex;  
   gap: 30px;
-  margin-bottom: 30px;
   align-items: flex-start;
+}
+
+/* 入力フォームのform-groupにのみmargin-bottomを適用 */
+form#contactForm .form-group {
+  margin-bottom: 30px;
+}
+
+/* 確認画面のform-groupはgapを変更し、項目間に余白を追加 */
+.confirmation-content .form-group {
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.confirmation-content .form-group:last-child {
+  border-bottom: none;
 }
 
 .form-label-wrapper {
@@ -131,10 +163,10 @@
   background-color: #007e43;
   color: #fff;
   border: none;
-  padding: 18px 60px;
+  padding: 18px 8%;
   font-size: 1.2rem;
   font-weight: bold;
-  border-radius: 8px;
+  border-radius: 50px;
   cursor: pointer;
   font-family: "Noto Sans JP", serif;
   transition: background-color 0.3s ease;
@@ -148,6 +180,133 @@
   transform: translateY(2px);
 }
 
+.confirmation-note {
+  margin-bottom: 30px;
+  padding: 15px;
+  background-color: #f5f5f5;
+  border-left: 4px solid #007e43;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.confirm-value {
+  padding: 12px 0;
+  background-color: transparent;
+  border: none;
+  font-size: 1rem;
+  min-height: 20px;
+  margin: 0;
+  word-wrap: break-word;
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+.confirm-divider {
+  border: none;
+  border-bottom: 1px solid #007E43;
+  margin: 0;
+}
+
+.message-content {
+  white-space: pre-wrap;
+  min-height: 100px;
+  word-wrap: break-word;
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+.confirmation-message {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1rem;
+  color: #413126;
+  margin: 30px 0 20px 0;
+  line-height: 1.6;
+}
+
+.button-group {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.back-button {
+  background-color: #fff;
+  color: #007e43;
+  border: 2px solid #007e43;
+  padding: 18px 8%;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 50px;
+  cursor: pointer;
+  font-family: "Noto Sans JP", serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #007e43;
+  color: #fff;
+}
+
+.back-button:active {
+  transform: translateY(2px);
+}
+
+/* 送信完了画面のスタイル */
+.completion-content {
+  text-align: center;
+}
+
+.completion-icon {
+  margin: 0 auto 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.completion-content h2 {
+  font-size: 1.3rem;
+  color: #413126;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.completion-message {
+  font-size: 0.95rem;
+  color: #413126;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.completion-note {
+  font-size: 0.9rem;
+  color: #413126;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.top-button-container {
+  margin-top: 30px;
+}
+
+.top-button {
+  display: inline-block;
+  background-color: #007e43;
+  color: #fff;
+  padding: 15px 8%;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.top-button:hover {
+  background-color: #005a2f;
+}
+
 .step-bar {
   display: flex;
   justify-content: space-between;
@@ -158,6 +317,7 @@
 .step-bar-container {
   margin: 0 auto 40px;
   max-width: 948px;
+  /* padding: 0 2vw; */
 }
 
 .step-item {
@@ -183,6 +343,10 @@
     font-size: 1.8rem;
   }
 
+  .page-header-content {
+    padding: 0 0;
+  }
+
   .step-indicator {
     gap: 30px;
   }
@@ -198,8 +362,14 @@
   }
 
   .form-container {
-    padding: 30px 100px;
-    margin: 0 20px 40px;
+    /* padding: 0 4vw; */
+    margin: 0 auto 40px;
+    background-color: transparent;
+  }
+
+  form#contactForm,
+  .confirmation-content {
+    padding: 20px 5%;
   }
 
   .form-label-wrapper {
@@ -208,11 +378,19 @@
   }
 
   .submit-button {
-    padding: 15px 40px;
+    padding: 15px 10%;
     font-size: 1rem;
   }
 
+  .back-button {
+    padding: 15px 10%;
+  }
+
+  .top-button {
+    padding: 12px 10%;
+  }
+
   .step-bar-container {
-    margin: 0 20px 30px;
+    margin: 0 auto 30px;
   }
 }
