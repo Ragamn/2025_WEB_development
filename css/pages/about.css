@@ -1,0 +1,97 @@
+.title {
+  text-align: center;
+  color: #007e43;
+  margin: 30px 0;
+}
+
+.company-info img {
+  width: 100%;
+}
+
+.company-info .relative {
+  position: relative;
+}
+
+.company-info .description {
+  position: absolute;
+  width: 600px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.company-info .description h1 {
+  text-align: center;
+}
+
+.company-info .description h1 span {
+  display: inline-block;
+  border-bottom: 2px solid #007e43;
+  padding-bottom: 10px;
+  margin: 10px;
+}
+
+.company-info .description p {
+  font-family: "Zen Old Mincho", serif;
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  font-weight: bold;
+}
+
+.company-about,
+.access .head {
+  margin: 50px 100px;
+  color: #007e43;
+}
+
+.about .company-details {
+  margin: 0 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+.about .company-details .detail {
+  display: grid;
+  grid-template-columns: 150px 1fr auto;
+  margin: 10px 0;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.about .company-details .detail .label {
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+.about .company-details .detail .value {
+  flex: 1;
+}
+
+.about .company-details .to-service {
+  width: 200px;
+  height: 60px;
+  background-color: #007e43;
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 60px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.access .description {
+  margin: 50px 100px;
+  line-height: 1.8;
+}
+
+.access .description p {
+  margin-bottom: 10px;
+}
+
+.block {
+  display: block;
+}
