@@ -10,7 +10,7 @@ header {
   color: #ffffff;
   display: flex;
   justify-content: space-between;
-  height: 100px;
+  height: 80px;
 }
 
 header h1 {
@@ -154,6 +154,17 @@ footer h1 {
 
 .footer-info p {
   margin: 2rem;
+}
+
+.address {
+  max-width: 100%;
+  padding: 0 1rem;
+}
+
+.address iframe {
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 5/3;
 }
 
 /* 一番太い文字(ぺージの一番上の見出し) */
