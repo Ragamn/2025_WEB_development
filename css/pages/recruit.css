@@ -1,4 +1,4 @@
-@charset 'UTF-8';
+@charset "UTF-8";
 
 .heading {
   width: 100%;
@@ -53,16 +53,16 @@
 }
 
 .recruit-table th {
-    width: 25%;
-    font-weight: bold;
-    color: #413126;
-    white-space: nowrap;
+  width: 25%;
+  font-weight: bold;
+  color: #413126;
+  white-space: nowrap;
 }
 
 .stats-container {
   width: 80%;
   display: flex;
-  justify-content: spaace-between;
+  justify-content: space-between;
   gap: 2.0rem;
   margin: 40px auto;
 }
@@ -78,19 +78,19 @@
 }
 
 .stat-icon {
-    font-size: 4.1rem; 
-    color: #008643;
+  font-size: 4.1rem; 
+  color: #008643;
 }
 
 .stat-text {
-    text-align: center;
+  text-align: center;
 }
 
 .stat-label {
-    display: block;
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 0.5rem;
+  display: block;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 0 1rem 0.5rem;
 }
 
 .stat-number {
@@ -100,55 +100,140 @@
 }
 
 .stat-unit {
-    font-size: 2rem; 
-    font-weight: bold;
+  font-size: 2rem; 
+  font-weight: bold;
 }
 
 .action-area{
-
   text-align: center;
   margin: 40px;
 }
 
 .hw-text {
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
 }
 
 .tour-text {
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin: 40px auto;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 40px auto;
 }
 
 .btn {
-    display: inline-block;
-    padding: 1.5rem 1.0rem; 
-    border-radius: 0.5rem;
-    font-size: 1.5rem; 
-    font-weight: bold;
-    transition: all 0.3s;
-    text-align: center;
-    min-width: 30rem;
+  display: inline-block;
+  padding: 1.5rem 1.0rem; 
+  border-radius: 0.5rem;
+  font-size: 1.5rem; 
+  font-weight: bold;
+  transition: all 0.3s;
+  text-align: center;
+  min-width: 30rem;
 }
 
 .btn-outline {
-    border: 0.2rem solid #008643;
-    color: #008643;
-    background-color: #fff;
+  border: 0.2rem solid #008643;
+  color: #008643;
+  background-color: #fff;
 }
 .btn-outline:hover {
-    background-color: #f0fdf4;
+  background-color: #f0fdf4;
 }
 
 .btn-solid {
-    background-color: #008643;
-    color: #fff;
-    border: 0.2rem solid #008643;
-    margin-bottom: 40px;
+  background-color: #008643;
+  color: #fff;
+  border: 0.2rem solid #008643;
+  margin-bottom: 40px;
 }
 .btn-solid:hover {
-    background-color: #00632f;
-    border-color: #004d1f;
+  background-color: #00632f;
+  border-color: #004d1f;
+}
+
+
+/* --- レスポンシブ対応 (375px基準) --- */
+@media screen and (max-width: 768px) {
+  /* ヒーローエリアの調整 */
+  .heading {
+    height: auto;
+    padding: 3rem 1rem;
+  }
+
+  .heading h1 {
+    font-size: 1.5rem; /* 48pxからスマホ用に縮小 */
+    line-height: 1.4;
+  }
+
+  /* 募集要項テーブルを縦並びに変更 */
+  .recruit-table-container {
+    width: 95%; /* 横幅いっぱいに広げる */
+  }
+
+  .recruit-table {
+    display: block; /* table構造を解除 */
+    border-spacing: 0;
+    margin: 20px auto;
+    width: 90%;
+  }
+
+  .recruit-table tbody,
+  .recruit-table tr,
+  .recruit-table th,
+  .recruit-table td {
+    display: block; /* すべてをブロック要素にして縦に並べる */
+    width: 100%;
+  }
+
+  .recruit-table th {
+    border-bottom: none;
+    padding-bottom: 0;
+    color: #008552; /* 項目名を強調 */
+    font-size: 1.1rem;
+  }
+
+  .recruit-table td {
+    padding-top: 0.5rem;
+    padding-bottom: 1.5rem;
+    font-size: 1rem;
+  }
+
+  /* 統計情報ボックスを縦並びに */
+  .stats-container {
+    flex-direction: column;
+    width: 95%;
+  }
+
+  .stat-box {
+    padding: 1.5rem;
+  }
+
+  .stat-number {
+    font-size: 2.8rem;
+  }
+
+  /* アクションエリア（ボタンなど） */
+  .btn {
+    min-width: 100%; /* ボタンを横幅いっぱいにする */
+    box-sizing: border-box;
+  }
+
+  .btn-outline{
+    font-size: 1.2rem;
+  }
+
+  .hw-text{
+    font-size: 1.3rem;
+    padding: 0 1rem;
+  }
+
+  .tour-text{
+    font-size: 1.15rem;
+    padding: 0 1rem;
+  }
+
+  .btn-solid{
+    font-size: 1.2rem;
+  }
 }
