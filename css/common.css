@@ -90,6 +90,13 @@ header h1 a:hover {
   transform: rotate(45deg) translate(-5px, -6px);
 }
 
+main {
+  background-image: url("../images/background.png");
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 40px;
+}
+
 footer {
   background-color: #007e43;
   color: #ffffff;
