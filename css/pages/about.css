@@ -95,3 +95,72 @@
 .block {
   display: block;
 }
+
+@media screen and (max-width: 765px) {
+  .title {
+    margin: 20px 0;
+    font-size: 1.5rem;
+  }
+
+  .company-info .description {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    box-sizing: border-box;
+    z-index: 10;
+  }
+
+  .company-info .description h1 {
+    font-size: 1.5rem;
+  }
+
+  .company-info .description h1 span {
+    margin: 5px;
+    font-size: 1.2rem;
+  }
+
+  .company-info .description p {
+    font-size: 0.8rem;
+    margin-bottom: 0;
+  }
+
+  .company-about,
+  .access .head {
+    margin: 30px 20px;
+  }
+
+  .about .company-details {
+    margin: 0 20px;
+  }
+
+  .about .company-details .detail {
+    grid-template-columns: 1fr;
+    margin: 15px 0;
+    padding: 10px 0;
+  }
+
+  .about .company-details .detail .label {
+    margin-right: 0;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+
+  .about .company-details .detail .value {
+    margin-bottom: 10px;
+  }
+
+  .about .company-details .to-service {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1rem;
+  }
+
+  .access .description {
+    margin: 30px 20px;
+    font-size: 0.95rem;
+  }
+}
