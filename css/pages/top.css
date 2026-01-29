@@ -342,3 +342,183 @@
   width: 185px;
   height: 80px;
 }
+
+@media screen and (max-width: 765px) {
+  .mv .catchcopy {
+    top: 23%;
+    left: 66%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+  }
+
+  .mv .catchcopy h1 {
+    font-size: 1.2rem;
+  }
+
+  .mv .subtitle {
+    top: 40%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    font-size: 1rem;
+    width: 80%;
+  }
+
+  .mv .phone-number {
+    font-size: 1rem;
+  }
+
+  .mv .phone-position {
+    top: 55%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+  }
+
+  .mv .phone-number::after {
+    content: "";
+    position: absolute;
+    bottom: 3%;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background-color: #3d679e;
+    z-index: -1;
+  }
+
+  .mv .link-to-contact {
+    top: 80%;
+    left: 73%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 50px;
+    font-size: 1rem;
+    padding: 10px 15px;
+  }
+
+  .about-us {
+    margin: 2rem;
+  }
+
+  .about-us p {
+    margin-bottom: 1rem;
+  }
+
+  .about-us .link-about {
+    width: 250px;
+    height: 50px;
+    font-size: 1rem;
+  }
+
+  .service {
+    padding: 30px 20px;
+    height: auto;
+  }
+
+  .service .content {
+    flex-direction: column;
+  }
+
+  .service .image img {
+    display: none;
+  }
+
+  .service .image .service-image a {
+    display: none;
+  }
+
+  .flow h2,
+  .areas h2 {
+    margin: 30px 20px;
+  }
+
+  .flow .prosess {
+    flex-direction: column;
+    margin: 0 20px;
+    gap: 30px;
+  }
+
+  .flow .prosess .step {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 15px;
+  }
+
+  .flow .prosess .step img {
+    width: 100px;
+    height: 100px;
+    flex-shrink: 0;
+  }
+
+  .flow .prosess .step .title {
+    margin-bottom: 0;
+    flex: 1;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+  }
+
+  .flow .prosess .step .number {
+    position: relative;
+    top: auto;
+    left: auto;
+    margin-right: 0;
+    flex-shrink: 0;
+  }
+
+  .flow .prosess .triangle {
+    display: none;
+  }
+
+  .areas .content {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .areas .content .info p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+
+  .corporate {
+    flex-direction: column;
+    margin: 50px 20px;
+    gap: 30px;
+  }
+
+  .corporate .content {
+    width: 100%;
+    height: auto;
+  }
+
+  .corporate .content .flex {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .corporate .content .flex .info {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .corporate .content .flex .info p {
+    margin-bottom: 15px;
+  }
+
+  .corporate .content .flex .link {
+    width: 100%;
+    height: 60px;
+    font-size: 1rem;
+  }
+
+  .corporate .content .flex img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+}
