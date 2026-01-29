@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,24 +8,33 @@
   <link rel="stylesheet" href="../css/destyle.css">
   <link rel="stylesheet" href="../css/common.css">
   <link rel="stylesheet" href="../css/pages/service.css">
+  <script src="../js/common.js" defer></script>
 </head>
+
 <body>
   <header>
-      <h1>早池峰設備工業</h1>
-      <li>
-        <ul>
+    <h1><a href="../index.html">早池峰設備工業</a></h1>
+    <nav class="nav-menu">
+      <ul>
+        <li>
           <a href="./index.html">事業紹介</a>
-        </ul>
-        <ul>
+        </li>
+        <li>
           <a href="../about/index.html">会社概要</a>
-        </ul>
-        <ul>
+        </li>
+        <li>
           <a href="../recruit/index.html">採用情報</a>
-        </ul>
-        <ul>
+        </li>
+        <li>
           <a href="../contact/index.html">お問い合わせ</a>
-        </ul>
-      </li>
+        </li>
+      </ul>
+    </nav>
+    <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
   </header>
   <main>
     <div class="heading">
@@ -41,168 +51,103 @@
 
     <div class="main-cont">
       <nav class="anchor-nav">
-      <a href="#business-works" class="nav-item">
-        事業紹介・施工事例<br>
-        <svg width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M12 18L24 30L36 18" stroke="#007E43" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-      </a>
-      <a href="#flow" class="nav-item">
-        施工までの流れ<br>
-        <svg width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M12 18L24 30L36 18" stroke="#007E43" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-      </a>
-      <a href="#area" class="nav-item">
-        対応地域<br>
-        <svg width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M12 18L24 30L36 18" stroke="#007E43" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-      </a>
-    </nav>
+        <a href="#business-works" class="nav-item">
+          事業紹介・施工事例<br>
+          <svg width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 18L24 30L36 18" stroke="#007E43" stroke-width="4" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+        </a>
+        <a href="#flow" class="nav-item">
+          施工までの流れ<br>
+          <svg width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 18L24 30L36 18" stroke="#007E43" stroke-width="4" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+        </a>
+        <a href="#area" class="nav-item">
+          対応地域<br>
+          <svg width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 18L24 30L36 18" stroke="#007E43" stroke-width="4" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+        </a>
+      </nav>
 
-    <div class="works-container">
-      <div class="tab-group">
-        <button class="tab-btn active" onclick="switchTab('business')">事業紹介</button>
-        <button class="tab-btn" onclick="switchTab('cases')">施工事例</button>
-      </div>
-
-      <div id="business" class="tab-panel active">
-        <div class="business-main-grid">
-          <div class="business-card large">
-            <img src="../images/water-works.jpg" alt="水道施設配管工事">
-              
-            <div class="card-body">
-              <h3>水道施設配管工事</h3>
-              <p>ダミーテキストが入ります。施工の内容や特徴についての説明文をここに記載してください。</p>
-            </div>
-          </div>
-          
-          <div class="business-card large">
-            <img src="../images/water-works.jpg" alt="水道施設配管工事">
-            <div class="card-body">
-              <h3>水道施設配管工事</h3>
-              <p>ダミーテキストが入ります。施工の内容や特徴についての説明文をここに記載してください。</p>
-            </div>
-          </div>
+      <div class="works-container">
+        <div class="tab-group">
+          <button class="tab-btn active" onclick="switchTab('business')">事業紹介</button>
+          <button class="tab-btn" onclick="switchTab('cases')">施工事例</button>
         </div>
 
-        <div class="business-sub-grid">
-          <div class="business-card small">
-            <img src="../images/water-works.jpg" alt="土木配管工事">
-            <div class="card-body">
-              <h3>土木配管工事</h3>
-              <p>ダミーテキストが入ります。</p>
+        <div id="business" class="tab-panel active">
+          <div class="business-main-grid">
+            <div class="business-card large">
+              <img src="../images/water-works.jpg" alt="水道施設配管工事">
+
+              <div class="card-body">
+                <h3>水道施設配管工事</h3>
+                <p>ダミーテキストが入ります。施工の内容や特徴についての説明文をここに記載してください。</p>
+              </div>
             </div>
-          </div>
-            
-          <div class="business-card small">
-            <img src="../images/water-works.jpg" alt="水道管埋設工事">
-            <div class="card-body">
-              <h3>水道管埋設工事</h3>
-              <p>ダミーテキストが入ります。</p>
-            </div>
-          </div>
-            
-          <div class="business-card small">
-            <img src="../images/water-works.jpg" alt="給排水設備工事">
-            <div class="card-body">
-              <h3>給排水設備工事</h3>
-              <p>ダミーテキストが入ります。</p>
+
+            <div class="business-card large">
+              <img src="../images/water-works.jpg" alt="水道施設配管工事">
+              <div class="card-body">
+                <h3>水道施設配管工事</h3>
+                <p>ダミーテキストが入ります。施工の内容や特徴についての説明文をここに記載してください。</p>
+              </div>
             </div>
           </div>
 
-          <div class="business-card small">
-            <img src="../images/water-works.jpg" alt="本管敷設工事">
-            <div class="card-body">
-              <h3>本管敷設工事</h3>
-              <p>ダミーテキストが入ります。</p>
+          <div class="business-sub-grid">
+            <div class="business-card small">
+              <img src="../images/water-works.jpg" alt="土木配管工事">
+              <div class="card-body">
+                <h3>土木配管工事</h3>
+                <p>ダミーテキストが入ります。</p>
+              </div>
             </div>
-          </div>
 
-          <div class="business-card small">
-            <img src="../images/water-works.jpg" alt="本管敷設工事">
-            <div class="card-body">
-              <h3>本管敷設工事</h3>
-              <p>ダミーテキストが入ります。</p>
+            <div class="business-card small">
+              <img src="../images/water-works.jpg" alt="水道管埋設工事">
+              <div class="card-body">
+                <h3>水道管埋設工事</h3>
+                <p>ダミーテキストが入ります。</p>
+              </div>
             </div>
-          </div>
 
-          <div class="business-card small">
-            <img src="../images/water-works.jpg" alt="本管敷設工事">
-            <div class="card-body">
-              <h3>本管敷設工事</h3>
-              <p>ダミーテキストが入ります。</p>
+            <div class="business-card small">
+              <img src="../images/water-works.jpg" alt="給排水設備工事">
+              <div class="card-body">
+                <h3>給排水設備工事</h3>
+                <p>ダミーテキストが入ります。</p>
+              </div>
             </div>
-          </div>
 
-          <div class="business-card small">
-            <img src="../images/water-works.jpg" alt="本管敷設工事">
-            <div class="card-body">
-              <h3>本管敷設工事</h3>
-              <p>ダミーテキストが入ります。</p>
+            <div class="business-card small">
+              <img src="../images/water-works.jpg" alt="本管敷設工事">
+              <div class="card-body">
+                <h3>本管敷設工事</h3>
+                <p>ダミーテキストが入ります。</p>
+              </div>
             </div>
-          </div>
 
-          <div class="business-card small">
-            <img src="../images/water-works.jpg" alt="本管敷設工事">
-            <div class="card-body">
-              <h3>本管敷設工事</h3>
-              <p>ダミーテキストが入ります。</p>
+            <div class="business-card small">
+              <img src="../images/water-works.jpg" alt="本管敷設工事">
+              <div class="card-body">
+                <h3>本管敷設工事</h3>
+                <p>ダミーテキストが入ります。</p>
+              </div>
             </div>
-          </div>
-        </div>
-      </div>
 
-      <div id="cases" class="tab-panel">
-        <div class="business-sub-grid">
-          <div class="business-card small">
-            <img src="../images/water-works.jpg" alt="土木配管工事">
-            <div class="card-body">
-              <h3>土木配管工事</h3>
-              <p>ダミーテキストが入ります。</p>
+            <div class="business-card small">
+              <img src="../images/water-works.jpg" alt="本管敷設工事">
+              <div class="card-body">
+                <h3>本管敷設工事</h3>
+                <p>ダミーテキストが入ります。</p>
+              </div>
             </div>
-          </div>
-              
-          <div class="business-card small">
-            <img src="../images/water-works.jpg" alt="水道管埋設工事">
-            <div class="card-body">
-              <h3>水道管埋設工事</h3>
-              <p>ダミーテキストが入ります。</p>
-            </div>
-          </div>
-              
-          <div class="business-card small">
-            <img src="../images/water-works.jpg" alt="給排水設備工事">
-            <div class="card-body">
-              <h3>給排水設備工事</h3>
-              <p>ダミーテキストが入ります。</p>
-            </div>
-          </div>
-
-          <div class="business-card small">
-            <img src="../images/water-works.jpg" alt="本管敷設工事">
-            <div class="card-body">
-              <h3>本管敷設工事</h3>
-              <p>ダミーテキストが入ります。</p>
-            </div>
-          </div>
-
-          <div class="business-card small">
-            <img src="../images/water-works.jpg" alt="本管敷設工事">
-            <div class="card-body">
-              <h3>本管敷設工事</h3>
-              <p>ダミーテキストが入ります。</p>
-            </div>
-          </div>
-
-          <div class="business-card small">
-            <img src="../images/water-works.jpg" alt="本管敷設工事">
-            <div class="card-body">
-              <h3>本管敷設工事</h3>
-              <p>ダミーテキストが入ります。</p>
-            </div>
-          </div>
 
             <div class="business-card small">
               <img src="../images/water-works.jpg" alt="本管敷設工事">
@@ -220,73 +165,140 @@
               </div>
             </div>
           </div>
-      </div>
-    </div>
+        </div>
 
-    <div class="contact-link">
-      <a href="" class="link-to-contact">お問い合わせはこちら</a>
-    </div>
+        <div id="cases" class="tab-panel">
+          <div class="business-sub-grid">
+            <div class="business-card small">
+              <img src="../images/water-works.jpg" alt="土木配管工事">
+              <div class="card-body">
+                <h3>土木配管工事</h3>
+                <p>ダミーテキストが入ります。</p>
+              </div>
+            </div>
 
-    <section id="flow" class="flow">
-      <h2>施工までの流れ</h2>
-      <div class="prosess">
-        <div class="step">
-          <div class="title">
-            <span class="number">1</span>
-            <p>相談</p>
-          </div>
-          <div>
-            <img src="../images/prosess_1.png" alt="相談" />
-            <p>ご依頼の連絡を頂きます。</p>
-          </div>
-        </div>
-        <div class="step">
-          <div class="title">
-            <span class="number">2</span>
-            <p>見積り</p>
-          </div>
-          <div>
-            <img src="../images/prosess_2.png" alt="見積り" />
-            <p>見積りを提出します。</p>
-          </div>
-        </div>
-        <div class="step">
-          <div class="title">
-            <span class="number">3</span>
-            <p>工事</p>
-          </div>
-          <div>
-            <img src="../images/prosess_3.png" alt="工事" />
-            <p>工事を行います。</p>
-          </div>
-        </div>
-        <div class="step">
-          <div class="title">
-            <span class="number">4</span>
-            <p>請求</p>
-          </div>
-          <div>
-            <img src="../images/prosess_4.png" alt="請求" />
-            <p>ご請求をさせていただきます。</p>
+            <div class="business-card small">
+              <img src="../images/water-works.jpg" alt="水道管埋設工事">
+              <div class="card-body">
+                <h3>水道管埋設工事</h3>
+                <p>ダミーテキストが入ります。</p>
+              </div>
+            </div>
+
+            <div class="business-card small">
+              <img src="../images/water-works.jpg" alt="給排水設備工事">
+              <div class="card-body">
+                <h3>給排水設備工事</h3>
+                <p>ダミーテキストが入ります。</p>
+              </div>
+            </div>
+
+            <div class="business-card small">
+              <img src="../images/water-works.jpg" alt="本管敷設工事">
+              <div class="card-body">
+                <h3>本管敷設工事</h3>
+                <p>ダミーテキストが入ります。</p>
+              </div>
+            </div>
+
+            <div class="business-card small">
+              <img src="../images/water-works.jpg" alt="本管敷設工事">
+              <div class="card-body">
+                <h3>本管敷設工事</h3>
+                <p>ダミーテキストが入ります。</p>
+              </div>
+            </div>
+
+            <div class="business-card small">
+              <img src="../images/water-works.jpg" alt="本管敷設工事">
+              <div class="card-body">
+                <h3>本管敷設工事</h3>
+                <p>ダミーテキストが入ります。</p>
+              </div>
+            </div>
+
+            <div class="business-card small">
+              <img src="../images/water-works.jpg" alt="本管敷設工事">
+              <div class="card-body">
+                <h3>本管敷設工事</h3>
+                <p>ダミーテキストが入ります。</p>
+              </div>
+            </div>
+
+            <div class="business-card small">
+              <img src="../images/water-works.jpg" alt="本管敷設工事">
+              <div class="card-body">
+                <h3>本管敷設工事</h3>
+                <p>ダミーテキストが入ります。</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </section>
-    <section id="area" class="areas">
-      <h2>対応地域</h2>
-      <div class="content">
-        <div class="area">
-          <img src="../images/area.png" alt="対応地域" />
-        </div>
-        <div class="info">
-          <p>
-            現在の対応地域です。<span></span> 対応する地域の方は<span
-            ></span>気軽にお問い合わせください。
-          </p>
-          <a href="" class="link-to-contact">お問い合わせはこちら</a>
-        </div>
+
+      <div class="contact-link">
+        <a href="" class="link-to-contact">お問い合わせはこちら</a>
       </div>
-    </section>
+
+      <section id="flow" class="flow">
+        <h2>施工までの流れ</h2>
+        <div class="prosess">
+          <div class="step">
+            <div class="title">
+              <span class="number">1</span>
+              <p>相談</p>
+            </div>
+            <div>
+              <img src="../images/prosess_1.png" alt="相談" />
+              <p>ご依頼の連絡を頂きます。</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="title">
+              <span class="number">2</span>
+              <p>見積り</p>
+            </div>
+            <div>
+              <img src="../images/prosess_2.png" alt="見積り" />
+              <p>見積りを提出します。</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="title">
+              <span class="number">3</span>
+              <p>工事</p>
+            </div>
+            <div>
+              <img src="../images/prosess_3.png" alt="工事" />
+              <p>工事を行います。</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="title">
+              <span class="number">4</span>
+              <p>請求</p>
+            </div>
+            <div>
+              <img src="../images/prosess_4.png" alt="請求" />
+              <p>ご請求をさせていただきます。</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="area" class="areas">
+        <h2>対応地域</h2>
+        <div class="content">
+          <div class="area">
+            <img src="../images/area.png" alt="対応地域" />
+          </div>
+          <div class="info">
+            <p>
+              現在の対応地域です。<span></span> 対応する地域の方は<span></span>気軽にお問い合わせください。
+            </p>
+            <a href="" class="link-to-contact">お問い合わせはこちら</a>
+          </div>
+        </div>
+      </section>
 
     </div>
   </main>
@@ -318,13 +330,8 @@
         <h1>所在地</h1>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3069.5001285679064!2d141.13918177597594!3d39.70594177156271!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f857637537b97ef%3A0xd2c10c797f35bb2!2z44CSMDIwLTAwMjEg5bKp5omL55yM55ub5bKh5biC5Lit5aSu6YCa77yT5LiB55uu77yR77yS4oiS77yS!5e0!3m2!1sja!2sjp!4v1765762661394!5m2!1sja!2sjp"
-          width="500"
-          height="300"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
+          width="500" height="300" style="border: 0" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </div>
     <div class="footer-info">
@@ -349,4 +356,5 @@
     }
   </script>
 </body>
+
 </html>
