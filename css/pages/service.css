@@ -147,13 +147,7 @@ html {
   gap: 15px;
 }
 
-/* スマホ対応：1列にする */
-@media (max-width: 768px) {
-  .business-main-grid,
-  .business-sub-grid {
-    grid-template-columns: 1fr;
-  }
-}
+
 
 .flow h2 {
   margin: 50px 0;
@@ -258,4 +252,163 @@ html {
   font-size: 1.5rem;
   width: 380px;
   height: 70px;
+}
+
+/* =========================================================
+   レスポンシブ対応 (Tablet: 768px以下 & Mobile: 375px対応)
+   ========================================================= */
+
+/* 画像が親要素からはみ出さないようにする基本設定 */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  /* 全体の幅を広げる */
+  .main-cont {
+    width: 95%;
+  }
+
+  /* ヘッダー画像エリア */
+  .heading {
+    height: 12rem;
+  }
+  .heading h1 {
+    font-size: 1.8rem;
+    padding: 0 10px;
+  }
+  .heading p {
+    font-size: 0.9rem;
+    padding: 0 15px;
+  }
+
+  /* ページ内リンクナビゲーション */
+  .anchor-nav {
+    flex-direction: column; /* 縦並びにする */
+    border: none;
+  }
+  .nav-item {
+    border-right: none;
+    border-bottom: 1px solid #1a7b45;
+    padding: 15px 0;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+  .nav-item:first-child {
+    border-top: 1px solid #1a7b45;
+  }
+
+  /* タブ切り替えボタン */
+  .tab-group {
+    width: 80%; /* 幅を画面いっぱいに */
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  .tab-btn {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    width: 50%; /* ボタンを横並びに詰め込む */
+    margin: 0;
+  }
+
+  /* 事業紹介・施工事例グリッド (タブレットは2列、スマホは1列へ) */
+  .business-main-grid {
+    grid-template-columns: 1fr; /* 上段は1列 */
+  }
+  .business-sub-grid {
+    grid-template-columns: 1fr 1fr; /* 下段はタブレット時2列 */
+  }
+
+  /* 施工までの流れ (横並び解除) */
+  .flow .prosess {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  /* スマホの幅(375px)に収まるように調整 */
+  .flow .prosess .step {
+    width: 100%;
+    max-width: 340px; /* 375px画面で左右に少し余白を残す */
+    height: auto; /* 高さを固定せず中身に合わせる */
+    padding-bottom: 20px;
+  }
+
+  /* 対応地域 */
+  .areas .content {
+    flex-direction: column; /* 縦並び */
+    gap: 30px;
+  }
+  .areas .area {
+    width: 100%;
+    height: auto;
+    text-align: center;
+  }
+  .areas .area img {
+    max-height: 300px; /* 画像が縦長になりすぎないように */
+    object-fit: contain;
+  }
+  
+  .areas .content .info p {
+    font-size: 1.2rem; /* 文字サイズを常識的な大きさに縮小 */
+    margin-bottom: 30px;
+    line-height: 1.6;
+  }
+  /* spanの改行を有効にするため */
+  .areas .content .info span {
+    display: inline; /* スマホでは自然な改行に任せる */
+  }
+
+  /* お問い合わせボタン */
+  .contact-link {
+    width: 100%;
+  }
+  .link-to-contact {
+    width: 100%; /* 親要素に合わせる */
+    max-width: 380px; /* PCサイズ以上にはならないように制限 */
+    font-size: 1.1rem;
+    height: 60px;
+    box-sizing: border-box; /* パディングを含めた幅計算にする */
+  }
+}
+
+/* =========================================================
+   スマホ専用調整 (375px 〜 480px)
+   ========================================================= */
+@media (max-width: 480px) {
+  /* グリッドを完全1列に */
+  .business-sub-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* 見出しの微調整 */
+  .heading h1 {
+    font-size: 1rem;
+  }
+  
+  .heading p {
+    font-size: 0.8rem;
+  }
+
+  .tab-group {
+    text-align: center;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .tab-btn {
+    padding: 10px 0;
+  }
+  
+  /* 地域の文字サイズをさらに調整 */
+  .areas .content .info p {
+    font-size: 1rem;
+  }
 }
