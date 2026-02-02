@@ -372,9 +372,18 @@ form#contactForm .form-group {
     padding: 20px 5%;
   }
 
+  .form-group {
+    flex-direction: column;
+    gap: 10px;
+  }
+
   .form-label-wrapper {
     flex: none;
     padding-top: 0;
+  }
+
+  .form-input-wrapper {
+    width: 100%;
   }
 
   .submit-button {
