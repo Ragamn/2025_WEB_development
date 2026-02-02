@@ -170,6 +170,7 @@ form#contactForm .form-group {
   cursor: pointer;
   font-family: "Noto Sans JP", serif;
   transition: background-color 0.3s ease;
+  text-align: center;
 }
 
 .submit-button:hover {
@@ -242,6 +243,7 @@ form#contactForm .form-group {
   cursor: pointer;
   font-family: "Noto Sans JP", serif;
   transition: background-color 0.3s ease, color 0.3s ease;
+  text-align: center;
 }
 
 .back-button:hover {
@@ -372,18 +374,32 @@ form#contactForm .form-group {
     padding: 20px 5%;
   }
 
+  .form-group {
+    flex-direction: column;
+    gap: 10px;
+  }
+
   .form-label-wrapper {
     flex: none;
     padding-top: 0;
   }
 
-  .submit-button {
-    padding: 15px 10%;
-    font-size: 1rem;
+  .form-input-wrapper {
+    width: 100%;
   }
 
+  .button-group {
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+
+  .submit-button,
   .back-button {
     padding: 15px 10%;
+    font-size: 1rem;
+    width: 100%;
+    max-width: 300px;
   }
 
   .top-button {
