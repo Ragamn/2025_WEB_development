@@ -68,14 +68,14 @@ html {
 
 .tab-group{
   margin-bottom: 30px;
-  background-color: #E5EEE7;
   border-radius: 25px;
-  width: 31%;
 }
 
 .tab-btn {
   margin:5px;
   padding: 10px 40px;
+  background-color: #E5EEE7;
+  border: 2px solid #008000; /* 緑色の枠線 */
   border-radius: 25px; /* 丸み */
   color: #333;
   cursor: pointer;
