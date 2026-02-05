@@ -1,466 +1,418 @@
 <!doctype html>
 <html lang="ja">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>事業紹介</title>
-    <link rel="stylesheet" href="../css/destyle.css" />
-    <link rel="stylesheet" href="../css/common.css" />
-    <link rel="stylesheet" href="../css/pages/service.css" />
-    <link rel="stylesheet" href="../css/pages/top.css" />
-    <script src="../js/common.js" defer></script>
-  </head>
 
-  <body>
-    <header>
-      <h1><a href="../index.html">早池峰設備工業</a></h1>
-      <nav class="nav-menu">
-        <ul>
-          <li>
-            <a href="./index.html" class="current">事業紹介</a>
-          </li>
-          <li>
-            <a href="../about/index.html">会社概要</a>
-          </li>
-          <li>
-            <a href="../recruit/index.html">採用情報</a>
-          </li>
-          <li>
-            <a href="../contact/index.html">お問い合わせ</a>
-          </li>
-        </ul>
-      </nav>
-      <div class="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>事業紹介</title>
+  <link rel="stylesheet" href="../css/destyle.css" />
+  <link rel="stylesheet" href="../css/common.css" />
+  <link rel="stylesheet" href="../css/pages/service.css" />
+  <link rel="stylesheet" href="../css/pages/top.css" />
+  <script src="../js/common.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <h1><a href="../index.html">早池峰設備工業</a></h1>
+    <nav class="nav-menu">
+      <ul>
+        <li>
+          <a href="./index.html" class="current">事業紹介</a>
+        </li>
+        <li>
+          <a href="../about/index.html">会社概要</a>
+        </li>
+        <li>
+          <a href="../recruit/index.html">採用情報</a>
+        </li>
+        <li>
+          <a href="../contact/index.html">お問い合わせ</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </header>
+  <main>
+    <div class="heading">
+      <div class="heading-text">
+        <h1>住環境の整備を通して社会に貢献する</h1>
+        <p>
+          私たちは、給排水、衛生設備工事及び、冷暖房設備工事を通じて<br />
+          住環境・地球環境整備に努め社会に貢し、共に学び、ともに栄え<br />
+          お客様にお心より満足し喜んでいただける仕事・サービスを提供することを経営理念に掲げ<br />
+          日夜努力し続けます。<br />
+        </p>
       </div>
-    </header>
-    <main>
-      <div class="heading">
-        <div class="heading-text">
-          <h1>住環境の整備を通して社会に貢献する</h1>
+    </div>
+
+    <div class="main-cont">
+      <nav class="anchor-nav">
+        <a href="#business" class="nav-item">
+          事業紹介・施工事例<br />
+          <svg width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 18L24 30L36 18" stroke="#007E43" stroke-width="4" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+        </a>
+        <a href="#flow" class="nav-item">
+          施工までの流れ<br />
+          <svg width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 18L24 30L36 18" stroke="#007E43" stroke-width="4" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+        </a>
+        <a href="#area" class="nav-item">
+          対応地域<br />
+          <svg width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 18L24 30L36 18" stroke="#007E43" stroke-width="4" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+        </a>
+      </nav>
+
+      <div class="works-container">
+        <div class="tab-group">
+          <button class="tab-btn active" onclick="switchTab('business')">
+            事業紹介
+          </button>
+          <button class="tab-btn" onclick="switchTab('cases')">
+            施工事例
+          </button>
+        </div>
+
+        <div id="business" class="tab-panel active">
+          <div class="business-main-grid">
+            <div class="business-card large">
+              <img src="../images/water-works.jpg" alt="漏水調査・修理" />
+
+              <div class="card-body">
+                <h3>漏水調査・修理</h3>
+                <p>
+                  「水道代が急に上がった」「壁や床が濡れている」といった見えない箇所の水漏れを、専門機器で迅速に特定・修理いたします。
+                </p>
+              </div>
+            </div>
+
+            <div class="business-card large">
+              <img src="../images/water-works.jpg" alt="水道管凍結修理" />
+              <div class="card-body">
+                <h3>水道管凍結修理</h3>
+                <p>
+                  冬場の厳しい寒さで凍ってしまった配管の解氷や、破裂してしまった箇所の補修・保護対策を行います。
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="business-sub-grid">
+            <div class="business-card small">
+              <img src="../images/work_1.png" alt="トイレ・台所等の詰り修理" />
+              <div class="card-body">
+                <h3>トイレ・台所等の詰り修理</h3>
+                <p>
+                  突然の水の流れの悪さや逆流を、高圧洗浄や専用工具を使って根本からスッキリ解消します。
+                </p>
+              </div>
+            </div>
+
+            <div class="business-card small">
+              <img src="../images/work_2.png" alt="混合栓交換（浴室・台所）" />
+              <div class="card-body">
+                <h3>混合栓交換（浴室・台所）</h3>
+                <p>
+                  ポタポタ漏れやレバーの不具合を解消。最新の節水タイプや、使い勝手の良いハンズフリー水栓への交換も承ります。
+                </p>
+              </div>
+            </div>
+
+            <div class="business-card small">
+              <img src="../images/work_3.png" alt="洗面・化粧台交換" />
+              <div class="card-body">
+                <h3>洗面・化粧台交換</h3>
+                <p>
+                  収納力や清掃性に優れた最新の洗面台へ。お客様のライフスタイルやスペースに合わせた最適な一台をご提案します。
+                </p>
+              </div>
+            </div>
+
+            <div class="business-card small">
+              <img src="../images/work_4.png" alt="トイレ交換" />
+              <div class="card-body">
+                <h3>トイレ交換</h3>
+                <p>
+                  節水・除菌機能付きの最新モデルへの交換から、和式から洋式へのリフォームまで幅広く対応いたします。
+                </p>
+              </div>
+            </div>
+
+            <div class="business-card small">
+              <img src="../images/work_5.png" alt="給湯機の交換" />
+              <div class="card-body">
+                <h3>給湯機の交換</h3>
+                <p>
+                  お湯が出ない、異音がするといったトラブルに対応。ガス・石油など、環境に合わせた高効率な給湯器への交換を行います。
+                </p>
+              </div>
+            </div>
+
+            <div class="business-card small">
+              <img src="../images/work_6.png" alt="井戸ポンプ修理・交換" />
+              <div class="card-body">
+                <h3>井戸ポンプ修理・交換</h3>
+                <p>
+                  井戸水の出が悪い、ポンプが止まらない等の不調を診断。パーツ交換から本体の据え替えまで確実に行います。
+                </p>
+              </div>
+            </div>
+
+            <div class="business-card small">
+              <img src="../images/work_7.png" alt="給排水配管替工事" />
+              <div class="card-body">
+                <h3>給排水配管替工事</h3>
+                <p>
+                  老朽化した鉛管や錆びた鉄管を、耐久性の高いポリエチレン管等へ新設。建物全体の水の健康を守ります。
+                </p>
+              </div>
+            </div>
+
+            <div class="business-card small">
+              <img src="../images/work_8.png" alt="灯油配管替工事" />
+              <div class="card-body">
+                <h3>灯油配管替工事</h3>
+                <p>
+                  古くなったホームタンクの交換や、腐食による灯油漏れを防ぐための配管引き直し工事を行います。
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="cases" class="tab-panel">
+          <div class="business-sub-grid">
+            <div class="business-card small">
+              <img src="../images/water-works.jpg" alt="漏水調査・修理" />
+              <div class="card-body">
+                <h3>漏水調査・修理</h3>
+                <p>
+                  見えない箇所の水漏れを、専門機器で迅速に特定・修理いたします。
+                </p>
+              </div>
+            </div>
+
+            <div class="business-card small">
+              <img src="../images/work_2.png" alt="混合栓交換（浴室・台所）" />
+              <div class="card-body">
+                <h3>混合栓交換（浴室・台所）</h3>
+                <p>
+                  ポタポタ漏れやレバーの不具合を解消。最新の節水タイプや、使い勝手の良いハンズフリー水栓への交換も承ります。
+                </p>
+              </div>
+            </div>
+
+            <div class="business-card small">
+              <img src="../images/work_3.png" alt="洗面・化粧台交換" />
+              <div class="card-body">
+                <h3>洗面・化粧台交換</h3>
+                <p>
+                  収納力や清掃性に優れた最新の洗面台へ。お客様のライフスタイルやスペースに合わせた最適な一台をご提案します。
+                </p>
+              </div>
+            </div>
+
+            <div class="business-card small">
+              <img src="../images/work_4.png" alt="トイレ交換" />
+              <div class="card-body">
+                <h3>トイレ交換</h3>
+                <p>
+                  節水・除菌機能付きの最新モデルへの交換から、和式から洋式へのリフォームまで幅広く対応いたします。
+                </p>
+              </div>
+            </div>
+
+            <div class="business-card small">
+              <img src="../images/work_5.png" alt="給湯機の交換" />
+              <div class="card-body">
+                <h3>給湯機の交換</h3>
+                <p>
+                  お湯が出ない、異音がするといったトラブルに対応。ガス・石油など、環境に合わせた高効率な給湯器への交換を行います。
+                </p>
+              </div>
+            </div>
+
+            <div class="business-card small">
+              <img src="../images/work_6.png" alt="井戸ポンプ修理・交換" />
+              <div class="card-body">
+                <h3>井戸ポンプ修理・交換</h3>
+                <p>
+                  井戸水の出が悪い、ポンプが止まらない等の不調を診断。パーツ交換から本体の据え替えまで確実に行います。
+                </p>
+              </div>
+            </div>
+
+            <div class="business-card small">
+              <img src="../images/work_7.png" alt="給排水配管替工事" />
+              <div class="card-body">
+                <h3>給排水配管替工事</h3>
+                <p>
+                  老朽化した鉛管や錆びた鉄管を、耐久性の高いポリエチレン管等へ新設。建物全体の水の健康を守ります。
+                </p>
+              </div>
+            </div>
+
+            <div class="business-card small">
+              <img src="../images/work_8.png" alt="灯油配管替工事" />
+              <div class="card-body">
+                <h3>灯油配管替工事</h3>
+                <p>
+                  古くなったホームタンクの交換や、腐食による灯油漏れを防ぐための配管引き直し工事を行います。
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-link">
+        <a href="../contact/index.html" class="link-to-contact">お問い合わせはこちら</a>
+      </div>
+    </div>
+
+    <section id="flow" class="flow">
+      <h2>施工までの流れ</h2>
+      <div class="prosess">
+        <div class="step">
+          <div class="title">
+            <span class="number">1</span>
+            <p>相談</p>
+          </div>
+          <div>
+            <img src="../images/prosess_1.png" alt="相談" />
+            <p>ご依頼の連絡を頂きます。</p>
+          </div>
+        </div>
+        <span class="triangle"></span>
+        <div class="step">
+          <div class="title">
+            <span class="number">2</span>
+            <p>見積り</p>
+          </div>
+          <div>
+            <img src="../images/prosess_2.png" alt="見積り" />
+            <p>見積りを提出します。</p>
+          </div>
+        </div>
+        <span class="triangle"></span>
+        <div class="step">
+          <div class="title">
+            <span class="number">3</span>
+            <p>工事</p>
+          </div>
+          <div>
+            <img src="../images/prosess_3.png" alt="工事" />
+            <p>工事を行います。</p>
+          </div>
+        </div>
+        <span class="triangle"></span>
+        <div class="step">
+          <div class="title">
+            <span class="number">4</span>
+            <p>請求</p>
+          </div>
+          <div>
+            <img src="../images/prosess_4.png" alt="請求" />
+            <p>ご請求をさせていただきます。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="area" class="areas">
+      <h2>対応地域</h2>
+      <div class="content">
+        <div class="area">
+          <img src="../images/area.png" alt="対応地域" />
+        </div>
+        <div class="info">
           <p>
-            私たちは、給排水、衛生設備工事及び、冷暖房設備工事を通じて<br />
-            住環境・地球環境整備に努め社会に貢し、共に学び、ともに栄え<br />
-            お客様にお心より満足し喜んでいただける仕事・サービスを提供することを経営理念に掲げ<br />
-            日夜努力し続けます。<br />
+            現在の対応地域です。<span></span> 対応する地域の方は<span></span>気軽にお問い合わせください。
+          </p>
+          <a href="" class="link-to-contact">お問い合わせはこちら</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="flex">
+      <div class="contact">
+        <h1>お問い合わせ</h1>
+        <div class="contact-info">
+          <p>TEL 090-0000-0000</p>
+          <p>FAX 090-0000-0000</p>
+        </div>
+        <div class="business">
+          <p class="day">営業日:平日8:00 ~ 17:00</p>
+          <p>
+            第2・第4土曜日、日曜日、お盆、GW、年末年始は営業していません。
           </p>
         </div>
-      </div>
-
-      <div class="main-cont">
-        <nav class="anchor-nav">
-          <a href="#business" class="nav-item">
-            事業紹介・施工事例<br />
-            <svg
-              width="24"
-              height="24"
-              viewBox="0 0 48 48"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M12 18L24 30L36 18"
-                stroke="#007E43"
-                stroke-width="4"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-          </a>
-          <a href="#flow" class="nav-item">
-            施工までの流れ<br />
-            <svg
-              width="24"
-              height="24"
-              viewBox="0 0 48 48"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M12 18L24 30L36 18"
-                stroke="#007E43"
-                stroke-width="4"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-          </a>
-          <a href="#area" class="nav-item">
-            対応地域<br />
-            <svg
-              width="24"
-              height="24"
-              viewBox="0 0 48 48"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M12 18L24 30L36 18"
-                stroke="#007E43"
-                stroke-width="4"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-          </a>
-        </nav>
-
-        <div class="works-container">
-          <div class="tab-group">
-            <button class="tab-btn active" onclick="switchTab('business')">
-              事業紹介
-            </button>
-            <button class="tab-btn" onclick="switchTab('cases')">
-              施工事例
-            </button>
-          </div>
-
-          <div id="business" class="tab-panel active">
-            <div class="business-main-grid">
-              <div class="business-card large">
-                <img src="../images/water-works.jpg" alt="漏水調査・修理" />
-
-                <div class="card-body">
-                  <h3>漏水調査・修理</h3>
-                  <p>
-                    「水道代が急に上がった」「壁や床が濡れている」といった見えない箇所の水漏れを、専門機器で迅速に特定・修理いたします。
-                  </p>
-                </div>
-              </div>
-
-              <div class="business-card large">
-                <img src="../images/water-works.jpg" alt="水道管凍結修理" />
-                <div class="card-body">
-                  <h3>水道管凍結修理</h3>
-                  <p>
-                    冬場の厳しい寒さで凍ってしまった配管の解氷や、破裂してしまった箇所の補修・保護対策を行います。
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="business-sub-grid">
-              <div class="business-card small">
-                <img
-                  src="../images/work_1.png"
-                  alt="トイレ・台所等の詰り修理"
-                />
-                <div class="card-body">
-                  <h3>トイレ・台所等の詰り修理</h3>
-                  <p>
-                    突然の水の流れの悪さや逆流を、高圧洗浄や専用工具を使って根本からスッキリ解消します。
-                  </p>
-                </div>
-              </div>
-
-              <div class="business-card small">
-                <img
-                  src="../images/work_2.png"
-                  alt="混合栓交換（浴室・台所）"
-                />
-                <div class="card-body">
-                  <h3>混合栓交換（浴室・台所）</h3>
-                  <p>
-                    ポタポタ漏れやレバーの不具合を解消。最新の節水タイプや、使い勝手の良いハンズフリー水栓への交換も承ります。
-                  </p>
-                </div>
-              </div>
-
-              <div class="business-card small">
-                <img src="../images/work_3.png" alt="洗面・化粧台交換" />
-                <div class="card-body">
-                  <h3>洗面・化粧台交換</h3>
-                  <p>
-                    収納力や清掃性に優れた最新の洗面台へ。お客様のライフスタイルやスペースに合わせた最適な一台をご提案します。
-                  </p>
-                </div>
-              </div>
-
-              <div class="business-card small">
-                <img src="../images/work_4.png" alt="トイレ交換" />
-                <div class="card-body">
-                  <h3>トイレ交換</h3>
-                  <p>
-                    節水・除菌機能付きの最新モデルへの交換から、和式から洋式へのリフォームまで幅広く対応いたします。
-                  </p>
-                </div>
-              </div>
-
-              <div class="business-card small">
-                <img src="../images/work_5.png" alt="給湯機の交換" />
-                <div class="card-body">
-                  <h3>給湯機の交換</h3>
-                  <p>
-                    お湯が出ない、異音がするといったトラブルに対応。ガス・石油など、環境に合わせた高効率な給湯器への交換を行います。
-                  </p>
-                </div>
-              </div>
-
-              <div class="business-card small">
-                <img src="../images/work_6.png" alt="井戸ポンプ修理・交換" />
-                <div class="card-body">
-                  <h3>井戸ポンプ修理・交換</h3>
-                  <p>
-                    井戸水の出が悪い、ポンプが止まらない等の不調を診断。パーツ交換から本体の据え替えまで確実に行います。
-                  </p>
-                </div>
-              </div>
-
-              <div class="business-card small">
-                <img src="../images/work_7.png" alt="給排水配管替工事" />
-                <div class="card-body">
-                  <h3>給排水配管替工事</h3>
-                  <p>
-                    老朽化した鉛管や錆びた鉄管を、耐久性の高いポリエチレン管等へ新設。建物全体の水の健康を守ります。
-                  </p>
-                </div>
-              </div>
-
-              <div class="business-card small">
-                <img src="../images/work_8.png" alt="灯油配管替工事" />
-                <div class="card-body">
-                  <h3>灯油配管替工事</h3>
-                  <p>
-                    古くなったホームタンクの交換や、腐食による灯油漏れを防ぐための配管引き直し工事を行います。
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div id="cases" class="tab-panel">
-            <div class="business-sub-grid">
-              <div class="business-card small">
-                <img src="../images/water-works.jpg" alt="漏水調査・修理" />
-                <div class="card-body">
-                  <h3>漏水調査・修理</h3>
-                  <p>
-                    見えない箇所の水漏れを、専門機器で迅速に特定・修理いたします。
-                  </p>
-                </div>
-              </div>
-
-              <div class="business-card small">
-                <img
-                  src="../images/work_2.png"
-                  alt="混合栓交換（浴室・台所）"
-                />
-                <div class="card-body">
-                  <h3>混合栓交換（浴室・台所）</h3>
-                  <p>
-                    ポタポタ漏れやレバーの不具合を解消。最新の節水タイプや、使い勝手の良いハンズフリー水栓への交換も承ります。
-                  </p>
-                </div>
-              </div>
-
-              <div class="business-card small">
-                <img src="../images/work_3.png" alt="洗面・化粧台交換" />
-                <div class="card-body">
-                  <h3>洗面・化粧台交換</h3>
-                  <p>
-                    収納力や清掃性に優れた最新の洗面台へ。お客様のライフスタイルやスペースに合わせた最適な一台をご提案します。
-                  </p>
-                </div>
-              </div>
-
-              <div class="business-card small">
-                <img src="../images/work_4.png" alt="トイレ交換" />
-                <div class="card-body">
-                  <h3>トイレ交換</h3>
-                  <p>
-                    節水・除菌機能付きの最新モデルへの交換から、和式から洋式へのリフォームまで幅広く対応いたします。
-                  </p>
-                </div>
-              </div>
-
-              <div class="business-card small">
-                <img src="../images/work_5.png" alt="給湯機の交換" />
-                <div class="card-body">
-                  <h3>給湯機の交換</h3>
-                  <p>
-                    お湯が出ない、異音がするといったトラブルに対応。ガス・石油など、環境に合わせた高効率な給湯器への交換を行います。
-                  </p>
-                </div>
-              </div>
-
-              <div class="business-card small">
-                <img src="../images/work_6.png" alt="井戸ポンプ修理・交換" />
-                <div class="card-body">
-                  <h3>井戸ポンプ修理・交換</h3>
-                  <p>
-                    井戸水の出が悪い、ポンプが止まらない等の不調を診断。パーツ交換から本体の据え替えまで確実に行います。
-                  </p>
-                </div>
-              </div>
-
-              <div class="business-card small">
-                <img src="../images/work_7.png" alt="給排水配管替工事" />
-                <div class="card-body">
-                  <h3>給排水配管替工事</h3>
-                  <p>
-                    老朽化した鉛管や錆びた鉄管を、耐久性の高いポリエチレン管等へ新設。建物全体の水の健康を守ります。
-                  </p>
-                </div>
-              </div>
-
-              <div class="business-card small">
-                <img src="../images/work_8.png" alt="灯油配管替工事" />
-                <div class="card-body">
-                  <h3>灯油配管替工事</h3>
-                  <p>
-                    古くなったホームタンクの交換や、腐食による灯油漏れを防ぐための配管引き直し工事を行います。
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div class="to-contact">
+          <a href="../contact/index.html">お問い合わせへ<span class="icon"></span></a>
         </div>
-
-        <div class="contact-link">
-          <a href="../contact/index.html" class="link-to-contact"
-            >お問い合わせはこちら</a
-          >
+        <div class="footer-nav">
+          <a href="../service/index.html">事業紹介<span class="icon-small"></span></a>
+          <a href="../about/index.html">会社概要<span class="icon-small"></span></a>
+          <a href="../recruit/index.html">採用情報<span class="icon-small"></span></a>
         </div>
       </div>
-
-      <section id="flow" class="flow">
-        <h2>施工までの流れ</h2>
-        <div class="prosess">
-          <div class="step">
-            <div class="title">
-              <span class="number">1</span>
-              <p>相談</p>
-            </div>
-            <div>
-              <img src="../images/prosess_1.png" alt="相談" />
-              <p>ご依頼の連絡を頂きます。</p>
-            </div>
-          </div>
-          <span class="triangle"></span>
-          <div class="step">
-            <div class="title">
-              <span class="number">2</span>
-              <p>見積り</p>
-            </div>
-            <div>
-              <img src="../images/prosess_2.png" alt="見積り" />
-              <p>見積りを提出します。</p>
-            </div>
-          </div>
-          <span class="triangle"></span>
-          <div class="step">
-            <div class="title">
-              <span class="number">3</span>
-              <p>工事</p>
-            </div>
-            <div>
-              <img src="../images/prosess_3.png" alt="工事" />
-              <p>工事を行います。</p>
-            </div>
-          </div>
-          <span class="triangle"></span>
-          <div class="step">
-            <div class="title">
-              <span class="number">4</span>
-              <p>請求</p>
-            </div>
-            <div>
-              <img src="../images/prosess_4.png" alt="請求" />
-              <p>ご請求をさせていただきます。</p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="area" class="areas">
-        <h2>対応地域</h2>
-        <div class="content">
-          <div class="area">
-            <img src="../images/area.png" alt="対応地域" />
-          </div>
-          <div class="info">
-            <p>
-              現在の対応地域です。<span></span> 対応する地域の方は<span
-              ></span>気軽にお問い合わせください。
-            </p>
-            <a href="" class="link-to-contact">お問い合わせはこちら</a>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer>
-      <div class="flex">
-        <div class="contact">
-          <h1>お問い合わせ</h1>
-          <div class="contact-info">
-            <p>TEL 090-0000-0000</p>
-            <p>FAX 090-0000-0000</p>
-          </div>
-          <div class="business">
-            <p class="day">営業日:平日8:00 ~ 17:00</p>
-            <p>
-              第2・第4土曜日、日曜日、お盆、GW、年末年始は営業していません。
-            </p>
-          </div>
-          <div class="to-contact">
-            <a href="#">お問い合わせへ<span class="icon"></span></a>
-          </div>
-          <div class="footer-nav">
-            <a href="#">事業紹介<span class="icon-small"></span></a>
-            <a href="#">会社概要<span class="icon-small"></span></a>
-            <a href="#">採用情報<span class="icon-small"></span></a>
-          </div>
-        </div>
-        <div class="address">
-          <h1>所在地</h1>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3069.5001285679064!2d141.13918177597594!3d39.70594177156271!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f857637537b97ef%3A0xd2c10c797f35bb2!2z44CSMDIwLTAwMjEg5bKp5omL55yM55ub5bKh5biC5Lit5aSu6YCa77yT5LiB55uu77yR77yS4oiS77yS!5e0!3m2!1sja!2sjp!4v1765762661394!5m2!1sja!2sjp"
-            width="500"
-            height="300"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
-        </div>
+      <div class="address">
+        <h1>所在地</h1>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3069.5001285679064!2d141.13918177597594!3d39.70594177156271!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f857637537b97ef%3A0xd2c10c797f35bb2!2z44CSMDIwLTAwMjEg5bKp5omL55yM55ub5bKh5biC5Lit5aSu6YCa77yT5LiB55uu77yR77yS4oiS77yS!5e0!3m2!1sja!2sjp!4v1765762661394!5m2!1sja!2sjp"
+          width="500" height="300" style="border: 0" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
-      <div class="footer-info">
-        <p>早池峰設備工業</p>
-        <p>〒000-0000 岩手県盛岡市中央通３丁目１２−２</p>
-      </div>
-    </footer>
+    </div>
+    <div class="footer-info">
+      <p>早池峰設備工業</p>
+      <p>〒000-0000 岩手県盛岡市中央通３丁目１２−２</p>
+    </div>
+  </footer>
 
-    <script>
-      function switchTab(tabId) {
-        // すべてのパネルを非表示にする
-        const panels = document.querySelectorAll(".tab-panel");
-        panels.forEach((panel) => panel.classList.remove("active"));
+  <script>
+    function switchTab(tabId) {
+      // すべてのパネルを非表示にする
+      const panels = document.querySelectorAll(".tab-panel");
+      panels.forEach((panel) => panel.classList.remove("active"));
 
-        // すべてのボタンからactiveクラスを外す
-        const buttons = document.querySelectorAll(".tab-btn");
-        buttons.forEach((btn) => btn.classList.remove("active"));
+      // すべてのボタンからactiveクラスを外す
+      const buttons = document.querySelectorAll(".tab-btn");
+      buttons.forEach((btn) => btn.classList.remove("active"));
 
-        // クリックされたタブとボタンだけを表示状態にする
-        document.getElementById(tabId).classList.add("active");
-        document
-          .querySelector(`.tab-btn[onclick="switchTab('${tabId}')"]`)
-          .classList.add("active");
+      // クリックされたタブとボタンだけを表示状態にする
+      document.getElementById(tabId).classList.add("active");
+      document
+        .querySelector(`.tab-btn[onclick="switchTab('${tabId}')"]`)
+        .classList.add("active");
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+      const tab = sessionStorage.getItem("openTab");
+
+      document
+        .querySelector(`.tab-btn[onclick="switchTab('${tab}')"]`)
+        ?.classList.add("active");
+
+      if (tab) {
+        switchTab(tab);
+        sessionStorage.removeItem("openTab");
       }
+    });
+  </script>
+</body>
 
-      document.addEventListener("DOMContentLoaded", () => {
-        const tab = sessionStorage.getItem("openTab");
-
-        document
-          .querySelector(`.tab-btn[onclick="switchTab('${tab}')"]`)
-          ?.classList.add("active");
-
-        if (tab) {
-          switchTab(tab);
-          sessionStorage.removeItem("openTab");
-        }
-      });
-    </script>
-  </body>
 </html>
