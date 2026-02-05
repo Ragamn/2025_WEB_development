@@ -58,6 +58,17 @@ header h1 a:hover {
   text-decoration: none;
   padding: 0 1rem;
   display: block;
+  transition: opacity 0.3s;
+  border-bottom: 2px solid transparent;
+}
+
+.nav-menu a:hover {
+  opacity: 0.8;
+}
+
+.nav-menu a.current {
+  border-bottom: 2px solid #ffffff;
+  font-weight: bold;
 }
 
 /* ハンバーガーメニュー */
